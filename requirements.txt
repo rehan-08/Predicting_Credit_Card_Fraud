@@ -1,0 +1,11 @@
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.17.1
+scikit-learn==1.4.2
+lightgbm==4.7.0
+xgboost==3.2.0
+catboost==1.2.10
+optuna==5.1.0
+matplotlib==3.10.8
+# neural model (optional, GPU): install torch from https://download.pytorch.org/whl/cu124 first
+pytabkit
