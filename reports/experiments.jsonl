@@ -1,0 +1,33 @@
+{"name": "lgb_fs-base", "auc": 0.946683, "fold_std": 0.003345, "pr_auc": 0.50765, "n_feat": 24, "secs": 139, "fs": "base"}
+{"name": "lgb_fs-eng", "auc": 0.945633, "fold_std": 0.003277, "pr_auc": 0.502857, "n_feat": 41, "secs": 192, "fs": "eng"}
+{"name": "lgb_nl4_mcs200", "auc": 0.947593, "fold_std": 0.003142, "pr_auc": 0.513982, "n_feat": 24, "secs": 285, "fs": "base"}
+{"name": "lgb_nl8_mcs500", "auc": 0.947086, "fold_std": 0.0031, "pr_auc": 0.510237, "n_feat": 24, "secs": 168, "fs": "base"}
+{"name": "lgb_nl15_mcs1000", "auc": 0.946834, "fold_std": 0.002988, "pr_auc": 0.508673, "n_feat": 24, "secs": 176, "fs": "base"}
+{"name": "lr_gam_b20_C0.05", "auc": 0.943535, "fold_std": 0.003262, "pr_auc": 0.494471, "n_feat": 255, "secs": 8}
+{"name": "lr_gam_b20_C0.3", "auc": 0.944053, "fold_std": 0.00316, "pr_auc": 0.495702, "n_feat": 255, "secs": 7}
+{"name": "lr_gam_b50_C0.05", "auc": 0.943271, "fold_std": 0.003733, "pr_auc": 0.500367, "n_feat": 493, "secs": 10}
+{"name": "lr_gam_b50_C0.3", "auc": 0.944589, "fold_std": 0.003248, "pr_auc": 0.504191, "n_feat": 493, "secs": 11}
+{"name": "te_glm_s42_t0", "auc": 0.949281, "params": {}, "iters": [], "secs": 68}
+{"name": "te_xgb_glm_s42_t0", "auc": 0.950539, "params": {}, "iters": [1307, 1310, 544, 1184, 1123], "secs": 207}
+{"name": "te_lgb_glm_s42_t0", "auc": 0.598508, "params": {}, "iters": [1260, 1449, 964, 2033, 1314], "secs": 539}
+{"name": "te_xgb_glm_pairs_s42_t0", "auc": 0.950566, "params": {}, "iters": [1044, 605, 782, 1272, 1124], "secs": 333}
+{"name": "te_lgb_s42_t0", "auc": 0.950339, "params": {}, "iters": [1817, 2148, 1834, 2006, 3111], "secs": 677}
+{"name": "realmlp_s42_e4", "auc": 0.94428, "secs": 517}
+{"name": "te_glm_pairs_s42_t0", "auc": 0.949325, "params": {}, "iters": [], "secs": 55}
+{"name": "te_lgb_glm_s42_t0", "auc": 0.950641, "params": {}, "iters": [1260, 1449, 964, 2033, 1314], "secs": 559}
+{"name": "te_xgb_glm_s42_t0_tuned", "auc": 0.950613, "params": {"learning_rate": 0.02, "max_depth": 3, "min_child_weight": 4.235, "subsample": 0.745, "colsample_bytree": 0.875, "reg_lambda": 2.506, "reg_alpha": 0.0116, "gamma": 0.0123, "max_bin": 128}, "iters": [390, 839, 692, 721, 715], "secs": 148}
+{"name": "te_lgb_glm_s42_t0_m80", "auc": 0.950626, "params": {}, "iters": [2047, 888, 1226, 803, 2419], "secs": 506}
+{"name": "te_lgb_glm_s42_t1", "auc": 0.950476, "params": {}, "iters": [1763, 711, 464, 1636, 1532], "secs": 429}
+{"name": "realmlp_allcat_s42_e4", "auc": 0.944201, "secs": 919}
+{"name": "te_lgb_glm_s42_t2", "auc": 0.950608, "params": {}, "iters": [432, 1434, 927, 1626, 1196], "secs": 420}
+{"name": "base_lr", "auc": 0.941867, "fold_std": 0.003379, "pr_auc": 0.489306, "n_feat": 24, "secs": 26}
+{"name": "base_lr_balanced", "auc": 0.941902, "fold_std": 0.003348, "pr_auc": 0.487387, "n_feat": 24, "secs": 27}
+{"name": "te_cat_s42_t0", "auc": 0.949649, "params": {}, "iters": [2024, 2381, 1699, 1876, 3418], "secs": 454}
+{"name": "base_hgb", "auc": 0.946449, "fold_std": 0.00321, "pr_auc": 0.505511, "n_feat": 24, "secs": 349}
+{"name": "te_xgb_glm_s42_t1_tuned", "auc": 0.950497, "params": {"learning_rate": 0.02, "max_depth": 3, "min_child_weight": 4.235, "subsample": 0.745, "colsample_bytree": 0.875, "reg_lambda": 2.506, "reg_alpha": 0.0116, "gamma": 0.0123, "max_bin": 128}, "iters": [1778, 2177, 1052, 934, 1408], "secs": 226}
+{"name": "base_lgb_nl4_balanced", "auc": 0.946736, "fold_std": 0.00326, "pr_auc": 0.508637, "n_feat": 24, "secs": 218}
+{"name": "te_xgb_glm_s42_t2_tuned", "auc": 0.950615, "params": {"learning_rate": 0.02, "max_depth": 3, "min_child_weight": 4.235, "subsample": 0.745, "colsample_bytree": 0.875, "reg_lambda": 2.506, "reg_alpha": 0.0116, "gamma": 0.0123, "max_bin": 128}, "iters": [802, 2156, 799, 1634, 737], "secs": 331}
+{"name": "base_xgb", "auc": 0.947443, "fold_std": 0.003137, "pr_auc": 0.513096, "n_feat": 24, "secs": 337}
+{"name": "base_rf", "auc": 0.932773, "fold_std": 0.003174, "pr_auc": 0.4074, "n_feat": 24, "secs": 964}
+{"name": "base_et", "auc": 0.936197, "fold_std": 0.003596, "pr_auc": 0.421669, "n_feat": 24, "secs": 667}
+{"name": "base_cat", "auc": 0.946333, "fold_std": 0.003184, "pr_auc": 0.508778, "n_feat": 24, "secs": 1784}

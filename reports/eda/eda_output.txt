@@ -1,0 +1,159 @@
+train (699960, 26) test (299984, 25)
+dtypes:
+ int64      8
+float64    7
+bool       6
+object     5
+Name: count, dtype: int64
+missing train: 0 test: 0
+dup rows (features only) train: 0
+dup rows train+test: 0
+target mean: 0.016699525687182123 values: [0. 1.]
+
+Numeric: ['amount_usd', 'hours_since_last_txn', 'txn_count_last_24h', 'distance_from_home_km', 'card_age_months', 'customer_age', 'account_balance_usd', 'cvv_retry_count', 'velocity_score', 'time_of_day_hour', 'day_of_week', 'merchant_risk_score', 'prior_disputes']
+Categorical/bool: ['merchant_category', 'card_type', 'auth_method', 'channel', 'device_type', 'is_foreign_transaction', 'is_new_merchant', 'used_vpn', 'ip_country_mismatch', 'billing_shipping_mismatch', 'is_ai_generated_scam_attempt']
+
+=== numeric describe ===
+                          count      mean       std    min     25%      50%      75%       max
+amount_usd             699960.0    79.893   205.174   1.00   15.81    27.25    43.11   6872.69
+hours_since_last_txn   699960.0     6.634     6.290   0.01    2.11     4.73     9.19     51.98
+txn_count_last_24h     699960.0     2.984     1.499   0.00    2.00     3.00     4.00     11.00
+distance_from_home_km  699960.0    13.588    11.617   0.00    4.43    10.22    19.75     57.93
+card_age_months        699960.0    46.863     5.579  25.00   43.00    47.00    51.00     73.00
+customer_age           699960.0    51.430    17.899  18.00   38.00    52.00    66.00     81.00
+account_balance_usd    699960.0  2064.998  3400.133  58.25  834.12  1382.74  2517.02  99701.39
+cvv_retry_count        699960.0     0.085     0.290   0.00    0.00     0.00     0.00      3.00
+velocity_score         699960.0    18.929    10.864   0.00   11.40    18.60    26.00     72.90
+time_of_day_hour       699960.0    11.762     6.869   0.00    6.00    12.00    18.00     23.00
+day_of_week            699960.0     2.982     2.002   0.00    1.00     3.00     5.00      6.00
+merchant_risk_score    699960.0    35.218    12.628   0.00   26.40    34.20    42.70    100.00
+prior_disputes         699960.0     0.153     0.381   0.00    0.00     0.00     0.00      4.00
+
+=== univariate AUC (numeric) & nunique ===
+                 feat  nuniq_tr  nuniq_te    auc  mean_tr  mean_te
+  merchant_risk_score       950       917 0.7489   35.218   35.217
+       velocity_score       666       644 0.7108   18.929   18.938
+      cvv_retry_count         4         4 0.7081    0.085    0.085
+         customer_age        64        64 0.6247   51.430   51.424
+   txn_count_last_24h        12        11 0.6203    2.984    2.984
+ hours_since_last_txn      3633      3331 0.5682    6.634    6.640
+           amount_usd     13387     10510 0.5448   79.893   79.921
+       prior_disputes         5         5 0.5322    0.153    0.154
+          day_of_week         7         7 0.5081    2.982    2.971
+  account_balance_usd     43317     31803 0.5063 2064.998 2071.468
+distance_from_home_km      4365      4108 0.5039   13.588   13.603
+      card_age_months        49        49 0.5019   46.863   46.841
+     time_of_day_hour        24        24 0.5002   11.762   11.747
+
+=== categorical fraud rates ===
+
+merchant_category
+                      mean    size  test_size
+merchant_category                           
+Crypto Exchange    0.0653    5285       2260
+Electronics        0.0308   48693      20870
+Fuel               0.0124   59880      25867
+Gaming             0.0551   23784      10191
+Gift Cards         0.0730    9456       4094
+Groceries          0.0111  142578      61338
+Healthcare         0.0129   35889      15456
+Online Retail      0.0111  155097      66608
+Restaurants        0.0114  101360      43130
+Streaming          0.0225   47196      19943
+Travel             0.0186   28715      12275
+Utilities          0.0138   42027      17952
+
+card_type
+               mean    size  test_size
+card_type                            
+Amex        0.0190   45797      19541
+Discover    0.0146   17235       7464
+Mastercard  0.0160  254857     109085
+RuPay       0.0168   37070      15775
+Visa        0.0170  345001     148119
+
+auth_method
+                      mean    size  test_size
+auth_method                                 
+3D Secure          0.0147  210036      90042
+Biometric          0.0050   93666      40222
+No Authentication  0.0644   67060      28047
+OTP                0.0141  175178      75492
+PIN                0.0087  154020      66181
+
+channel
+                mean    size  test_size
+channel                               
+ATM          0.0159   30220      12926
+Contactless  0.0155  105620      45664
+In-App       0.0163   83716      35598
+Online       0.0174  273939     117066
+POS          0.0166  206465      88730
+
+device_type
+                  mean    size  test_size
+device_type                             
+ATM Machine    0.0170   20877       8985
+Android Phone  0.0161  237454     101479
+Mac            0.0171   33973      14607
+POS Terminal   0.0173  113237      48702
+Smart Watch    0.0170   21106       9210
+Tablet         0.0170   27688      11910
+Windows PC     0.0161   80934      34669
+iPhone         0.0172  164691      70422
+
+is_foreign_transaction
+                           mean    size  test_size
+is_foreign_transaction                           
+False                   0.0148  687862     294766
+True                    0.1257   12098       5218
+
+is_new_merchant
+                    mean    size  test_size
+is_new_merchant                           
+False            0.0112  593240     254138
+True             0.0473  106720      45846
+
+used_vpn
+             mean    size  test_size
+used_vpn                           
+False     0.0150  676295     290094
+True      0.0655   23665       9890
+
+ip_country_mismatch
+                        mean    size  test_size
+ip_country_mismatch                           
+False                0.0143  688648     295174
+True                 0.1650   11312       4810
+
+billing_shipping_mismatch
+                              mean    size  test_size
+billing_shipping_mismatch                           
+False                      0.0152  690906     296058
+True                       0.1299    9054       3926
+
+is_ai_generated_scam_attempt
+                                 mean    size  test_size
+is_ai_generated_scam_attempt                           
+False                         0.0163  697661     298955
+True                          0.1522    2299       1029
+
+=== id check ===
+id AUC: 0.49854846965794763
+id_bin
+0    0.0167
+1    0.0159
+2    0.0171
+3    0.0173
+4    0.0171
+5    0.0169
+6    0.0167
+7    0.0163
+8    0.0170
+9    0.0160
+test id range: 699960 999943
+
+=== numeric correlations (|r|>0.3) ===
+hours_since_last_txn  velocity_score   -0.343970
+txn_count_last_24h    velocity_score    0.621435
+plots saved to G:\Kaggle Predicting Credit Card Fraud\reports\eda

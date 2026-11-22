@@ -1,0 +1,15 @@
+{
+  "best_value": 0.9503470474541604,
+  "params": {
+    "max_depth": 3,
+    "min_child_weight": 4.23528267300364,
+    "subsample": 0.7454524773666433,
+    "colsample_bytree": 0.8745114911711577,
+    "reg_lambda": 2.505966092414818,
+    "reg_alpha": 0.01155480388930689,
+    "gamma": 0.012317536450965618,
+    "max_bin": 128
+  },
+  "baseline": 0.9500737044576839,
+  "n_trials": 40
+}

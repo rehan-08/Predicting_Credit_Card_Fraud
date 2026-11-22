@@ -1,0 +1,7 @@
+LGB (seed bag)            OOF AUC 0.950667
+XGB (seed bag)            OOF AUC 0.950741
+CAT (seed bag)            OOF AUC 0.949649
+LGB+XGB            fixed-weight 0.950742   nested-CV LR stack 0.950727
+LGB+CAT            fixed-weight 0.950570   nested-CV LR stack 0.950653
+XGB+CAT            fixed-weight 0.950614   nested-CV LR stack 0.950716
+LGB+XGB+CAT        fixed-weight 0.950745   nested-CV LR stack 0.950742

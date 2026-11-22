@@ -1,0 +1,187 @@
+[
+  {
+    "model": "final stack (nested CV)",
+    "roc_auc": 0.950902,
+    "pr_auc": 0.533297,
+    "thresholds": {
+      "F1-optimal": {
+        "threshold": 0.2659,
+        "precision": 0.5549,
+        "recall": 0.4876,
+        "f1": 0.5191,
+        "TN": 683699,
+        "FP": 4572,
+        "FN": 5989,
+        "TP": 5700
+      },
+      "0.5": {
+        "threshold": 0.5,
+        "precision": 0.77,
+        "recall": 0.3259,
+        "f1": 0.4579,
+        "TN": 687133,
+        "FP": 1138,
+        "FN": 7880,
+        "TP": 3809
+      },
+      "top 1.67% flagged": {
+        "threshold": 0.23371,
+        "precision": 0.5165,
+        "recall": 0.5165,
+        "f1": 0.5165,
+        "TN": 682619,
+        "FP": 5652,
+        "FN": 5652,
+        "TP": 6037
+      }
+    }
+  },
+  {
+    "model": "te_xgb_glm_s42_t0_tuned",
+    "roc_auc": 0.950613,
+    "pr_auc": 0.531194,
+    "thresholds": {
+      "F1-optimal": {
+        "threshold": 0.26283,
+        "precision": 0.5632,
+        "recall": 0.4804,
+        "f1": 0.5185,
+        "TN": 683916,
+        "FP": 4355,
+        "FN": 6074,
+        "TP": 5615
+      },
+      "0.5": {
+        "threshold": 0.5,
+        "precision": 0.7546,
+        "recall": 0.3333,
+        "f1": 0.4624,
+        "TN": 687004,
+        "FP": 1267,
+        "FN": 7793,
+        "TP": 3896
+      },
+      "top 1.67% flagged": {
+        "threshold": 0.22014,
+        "precision": 0.516,
+        "recall": 0.516,
+        "f1": 0.516,
+        "TN": 682613,
+        "FP": 5658,
+        "FN": 5658,
+        "TP": 6031
+      }
+    }
+  },
+  {
+    "model": "te_lgb_glm_s42_t0",
+    "roc_auc": 0.950641,
+    "pr_auc": 0.531472,
+    "thresholds": {
+      "F1-optimal": {
+        "threshold": 0.26131,
+        "precision": 0.5647,
+        "recall": 0.4788,
+        "f1": 0.5182,
+        "TN": 683957,
+        "FP": 4314,
+        "FN": 6092,
+        "TP": 5597
+      },
+      "0.5": {
+        "threshold": 0.5,
+        "precision": 0.7585,
+        "recall": 0.3322,
+        "f1": 0.462,
+        "TN": 687035,
+        "FP": 1236,
+        "FN": 7806,
+        "TP": 3883
+      },
+      "top 1.67% flagged": {
+        "threshold": 0.21716,
+        "precision": 0.5142,
+        "recall": 0.5142,
+        "f1": 0.5142,
+        "TN": 682593,
+        "FP": 5678,
+        "FN": 5678,
+        "TP": 6011
+      }
+    }
+  },
+  {
+    "model": "lgb_nl4_mcs200",
+    "roc_auc": 0.947593,
+    "pr_auc": 0.513982,
+    "thresholds": {
+      "F1-optimal": {
+        "threshold": 0.2642,
+        "precision": 0.5642,
+        "recall": 0.4567,
+        "f1": 0.5048,
+        "TN": 684147,
+        "FP": 4124,
+        "FN": 6351,
+        "TP": 5338
+      },
+      "0.5": {
+        "threshold": 0.5,
+        "precision": 0.7543,
+        "recall": 0.3136,
+        "f1": 0.443,
+        "TN": 687077,
+        "FP": 1194,
+        "FN": 8023,
+        "TP": 3666
+      },
+      "top 1.67% flagged": {
+        "threshold": 0.21168,
+        "precision": 0.5001,
+        "recall": 0.5001,
+        "f1": 0.5001,
+        "TN": 682428,
+        "FP": 5843,
+        "FN": 5843,
+        "TP": 5846
+      }
+    }
+  },
+  {
+    "model": "base_lr",
+    "roc_auc": 0.941867,
+    "pr_auc": 0.489306,
+    "thresholds": {
+      "F1-optimal": {
+        "threshold": 0.24608,
+        "precision": 0.5319,
+        "recall": 0.4475,
+        "f1": 0.4861,
+        "TN": 683667,
+        "FP": 4604,
+        "FN": 6458,
+        "TP": 5231
+      },
+      "0.5": {
+        "threshold": 0.5,
+        "precision": 0.7421,
+        "recall": 0.2958,
+        "f1": 0.423,
+        "TN": 687069,
+        "FP": 1202,
+        "FN": 8231,
+        "TP": 3458
+      },
+      "top 1.67% flagged": {
+        "threshold": 0.20321,
+        "precision": 0.481,
+        "recall": 0.481,
+        "f1": 0.481,
+        "TN": 682204,
+        "FP": 6067,
+        "FN": 6067,
+        "TP": 5622
+      }
+    }
+  }
+]
