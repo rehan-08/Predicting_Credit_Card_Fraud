@@ -1,0 +1,11 @@
+file,cv_auc,scored_by,checks
+sub01_stack_all_C0.01.csv,0.9509,nested-CV stack,PASS
+sub02_stack_all_C0.1.csv,0.95091,nested-CV stack,PASS
+sub03_stack_all_C0.003.csv,0.95089,nested-CV stack,PASS
+sub04_stack_te_only.csv,0.95082,nested-CV stack,PASS
+sub05_stack_glm_bags_cat_rawlgb.csv,0.95085,nested-CV stack,PASS
+sub06_mean_lgb_xgb_glm_bags.csv,0.95074,"OOF, equal weights",PASS
+sub07_mean_xgb_glm_bag.csv,0.95074,"OOF, equal weights",PASS
+sub08_mean_lgb_glm_bag.csv,0.95067,"OOF, equal weights",PASS
+sub09_mean_top_te_models.csv,0.95082,"OOF, equal weights",PASS
+sub10_single_lgb_glm.csv,0.95064,"OOF, equal weights",PASS
